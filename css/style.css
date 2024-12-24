@@ -34,7 +34,7 @@ header>img {
     display: flex;
     flex-direction: row;
     padding: 5em;
-    margin-top: 5vh;
+    margin-top: 1%;
 }
 
 .select-title {
@@ -72,6 +72,10 @@ header>img {
     width: 100%;
 }
 
+.select-character-name{
+    font-size: 130%;
+}
+
 .select-character-info {
     padding: 0.5em;
     width: 70%;
@@ -95,6 +99,7 @@ header>img {
     body {
         height: 120vh;
     }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -141,6 +146,10 @@ header>img {
     
     .selected-character-img{
         width: 70%;
+    }
+
+    .select-character-name{
+        font-size: 200%;
     }
 
     .select-character-info{

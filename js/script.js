@@ -13,12 +13,14 @@ const characterDescriptions = [
 
 function trocar(element) {
     const characterImage = document.querySelector(".selected-character-img");
-    const characterName = document.querySelector(".select-character-info");
+    const characterName = document.querySelector(".select-character-name")
+    const characteDesc = document.querySelector(".select-character-info");
 
     const index = GETElement(element);
 
     characterImage.src = `imagens/card-${characterNames[index].toLowerCase().replace(' ', '-')}.png`;
-    characterName.textContent = characterDescriptions[index];
+    characterName.innerHTML = characterNames[index]
+    characteDesc.textContent = characterDescriptions[index];
 
     const div = selectedCharater(element);
     removerSelectedCharacter();
