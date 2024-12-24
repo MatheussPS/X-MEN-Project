@@ -18,7 +18,7 @@ function trocar(element) {
 
     const index = GETElement(element);
 
-    characterImage.src = `imagens/card-${characterNames[index].toLowerCase().replace(' ', '-')}.png`;
+    characterImage.src = `img/card-${characterNames[index].toLowerCase().replace(' ', '-')}.png`;
     characterName.innerHTML = characterNames[index]
     characteDesc.textContent = characterDescriptions[index];
 
